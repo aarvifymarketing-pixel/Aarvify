@@ -54,7 +54,7 @@ const Career = () => {
                 formData.append('resume', data.resume[0]);
             }
 
-            const response = await fetch('http://localhost:5000/api/apply', {
+            const response = await fetch('https://backend-1-px7y.onrender.com/api/apply', {
                 method: 'POST',
                 body: formData,
             });
